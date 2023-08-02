@@ -1,0 +1,47 @@
+:root{
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grey1: #F8F9FA;
+  --color-grey2: #E9ECEF;
+  --color-grey3: #868E96;
+  --color-grey4: #212529;
+  --color-primary: #FD377E;
+  --color-primary2: #E34981;
+  --color-green: #03B898;
+  --font-family: 'Inter', sans-serif;
+}
+
+.buttonPink{
+  background-color: var(--color-primary);
+  height: 48px;
+  padding: 13px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+.buttonPink:hover{
+  background-color: var(--color-primary2);
+}
+
+.buttonRemove{
+  background-color: var(--color-grey2);
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-family);
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--color-grey4);
+  width: 49px;
+  height: 19px;
+}
+
+.buttonRemove:hover{
+  background-color: var(--color-grey4);
+  color: var(--color-grey2);
+}

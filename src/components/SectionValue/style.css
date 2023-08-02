@@ -1,0 +1,11 @@
+
+
+.containerSectionValue{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 355px;
+  height: 96px;
+  border: 1px solid var(--color-grey2); 
+
+}
