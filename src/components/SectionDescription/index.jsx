@@ -1,20 +1,47 @@
+import { useState } from 'react'
 import './style.css'
+import { Input } from '../Input'
+
+export const SectionDescription = ({addNote}) => {
+  const [title, setTitle] = useState("")
+  const [number, setNumber] = useState("")
+  const [option, setOption] = useState("")
+
+  const submit = (event) => {
+    event.preventDefault()
+    addNote({title,number,option})
+    setTitle("")
+    setNumber("")
+    setOption("")
+  }
+  
 
 
-export const SectionDescription = () => {
   return(
-    <section className='containerValue'>
-      <h2 className="title1">Descrição</h2>
-      <input type="text" placeholder="Digite aqui sua descrição" />
+    <form className='containerValue' onSubmit={submit}>
+      <Input
+            label="Descrição"
+            placeholder="Digite aqui sua descrição"
+            type="text"
+            id="title"
+            value={title}
+            setValue={setTitle}
+      />
       <p className='title5'>Ex: Compra de roupas</p>
-      <h2 className="title1">Valor (R$)</h2>
-      <input type="number" placeholder="1" />
-      <h2 className="title1">Tipo de valor</h2>
-      <select className="title1" name="">
-        <option className="title1" value="entrada">Entrada</option>
-        <option className="title1" value="despesa">Despesa</option>
+      <Input
+            label="Valor (R$) "
+            placeholder="1"
+            type="number"
+            id="number"
+            value={number}
+            setValue={setNumber}
+      />
+      <h2 className="title1" >Tipo de valor</h2>
+      <select className="title1" name="" onChange={(event) => setOption(event.target.value)}>
+        <option className="title1" value="Entrada">Entrada</option>
+        <option className="title1" value="Despesa">Despesa</option>
       </select>
       <button className="buttonPink">Inserir valor</button> 
-    </section>
+    </form>
   )
 }

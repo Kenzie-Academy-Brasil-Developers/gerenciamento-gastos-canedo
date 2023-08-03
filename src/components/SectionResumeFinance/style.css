@@ -5,9 +5,7 @@
   flex-direction: column;
   width: 560px;
   height: 452px; 
-  border: 1px solid var(--color-grey2); 
-  gap: 20px;
-    
+  gap: 20px; 
 }
 
 .containerResumeCards{

@@ -1,16 +1,12 @@
-import { Header } from "../../components/Header"
-import { SectionDescription } from "../../components/SectionDescription"
-import { SectionResumeFinance } from "../../components/SectionResumeFinance"
-import { SectionValue } from "../../components/SectionValue"
+
+import './style.css'
+import { TodoSection } from "../../components/TodoSection"
 
 
 export const HomePage = () => {
   return(
     <>
-      <Header/>
-      <SectionDescription/>
-      <SectionResumeFinance/>
-      <SectionValue/>
+      <TodoSection/>
     </>
   )
 }

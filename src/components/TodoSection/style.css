@@ -1,0 +1,12 @@
+.sectionContainer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px ;
+  padding: 0 20%;
+}
+
+.sectionPrimary{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
