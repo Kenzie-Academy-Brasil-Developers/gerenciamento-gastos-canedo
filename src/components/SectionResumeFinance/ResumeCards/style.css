@@ -4,7 +4,6 @@
   justify-content: space-between;
   width: 100%;
   height: 87px;
-  border-left: 4px solid var(--color-green);
   border-radius: 4px;
   background: var(--color-grey1);
   padding: 10px;
@@ -21,4 +20,12 @@
   flex-direction: column;
   gap: 10px;
   align-items: center;
+}
+
+.borderLeftGreen{
+  border-left: 4px solid var(--color-green);
+}
+
+.borderLeftGrey{
+  border-left: 4px solid #9b9b9ba8;
 }

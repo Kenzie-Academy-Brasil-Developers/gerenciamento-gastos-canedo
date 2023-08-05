@@ -1,9 +1,10 @@
 import './style.css'
+import NuKenzie from "../../assets/NuKenzie.svg"
 
 export const Header = () => {
   return(
     <header>
-      <img src="../../src/assets/Nu Kenzie.svg" alt="logo-kenzie" />
+      <img src={NuKenzie} alt="logo-kenzie" />
     </header>
   )
 }

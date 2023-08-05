@@ -2,10 +2,15 @@ import './style.css'
 
 export const SectionValue = ({ noteList}) => {
   const totalValue = noteList.reduce((prevValue, note) => {
-    return prevValue + parseFloat(note.number)
-  },0)
+    const numberValue = parseFloat(note.number)
+    if (note.option === 'Despesa') {
+      return prevValue - numberValue
+    } else {
+      return prevValue + numberValue
+    }
+  }, 0)
   
-  console.log(totalValue)
+
   return(
     <section className='containerSectionValue'>
       <div className=''>

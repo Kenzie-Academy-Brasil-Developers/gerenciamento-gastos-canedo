@@ -2,8 +2,16 @@ import './style.css'
 
 
 export const ResumeCards = ({id, title, option, number, removeNote}) => {
+  const getBorderColorClass = () => {
+    if (option === 'Entrada') {
+      return 'borderLeftGreen'
+    } else if (option === 'Despesa') {
+      return 'borderLeftGrey'
+    } 
+  }
+
   return(
-        <div className='containerCard'>
+        <div className={`containerCard ${getBorderColorClass()}`}>
           <div className='div-primary'>
             <h2 className="title2">{title}</h2>
             <p className="title1">{option}</p>

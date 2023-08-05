@@ -7,21 +7,17 @@ import { SectionValue } from '../SectionValue'
 import { useState } from 'react'
 
 export const TodoSection = () => {
-  const [noteList, setNoteList] = useState([]);
-
-  console.log(noteList);
-
+  const [noteList, setNoteList] = useState([])
 
   const addNote = (formData) => {
-     const newNote = { ...formData, id: crypto.randomUUID() };
-     setNoteList([...noteList, newNote]);
-  };
+     const newNote = { ...formData, id: crypto.randomUUID() }
+     setNoteList([...noteList, newNote])
+  }
   
-
   const removeNote = (removeId) => {
-     const newNoteList = noteList.filter((note) => note.id !== removeId);
-     setNoteList(newNoteList);
-  };
+     const newNoteList = noteList.filter((note) => note.id !== removeId)
+     setNoteList(newNoteList)
+  }
   return(
     <Fragment>
       <Header/>
